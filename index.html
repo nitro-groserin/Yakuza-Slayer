@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>反社スレイヤー</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+.modal {
+  display: none; /* 初期状態では非表示 */
+  position: fixed; /* 画面に固定 */
+  z-index: 1; /* 最前面に表示 */
+  left: 0;
+  top: 0;
+  width: 100%; /* 全幅 */
+  height: 100%; /* 全高 */
+  overflow: auto; /* コンテンツが多ければスクロール可能 */
+  background-color: rgba(0, 0, 0, 0.4); /* 背景を少し暗くする */
+}
+
+.modal-content {
+  background-image: url('/Slayer-box/img-box2/Screenshot_20250308-231629~4 (1).png');
+  background-size: 100% 100%; /* または contain, cover など */
+  background-repeat: no-repeat;
+  background-color: #fefefe;
+  margin: 15% auto; /* 中央に配置 */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* 幅を調整 */
+  height: 500px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#myModal p{
+  color: black;
+  font-size: 20px;
+  left: 20%;
+  position: absolute;
+  top: 80px;
+  text-align: center;
+}
+
+.modal-content a{
+  color: red;
+  position: absolute;
+  left: 85px;
+  top: 150px;
+  pointer-events: none;
+}
+
+body { 
+  margin: 0; 
+  overflow: hidden; 
+  background-color: black; /* 背景色を黒に設定 */
+}
+canvas { display: block; }
+</style>
+</head>
+<body>
+  
+  
+<button id="Coin">
+  <p class="">コイン</p>
+</button>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+    <p>100円でご購入後<br >
+    ゲームをプレイできます</p>
+    <a href="https://buy.stripe.com/test_eVacQg5Vj98o4r6144">こちらをクリックしてお支払い</a>
+    <br>
+    </p>
+    
+    
+  </div>
+</div>
+
+
+<canvas id="snow-canvas"></canvas>
+<script>
+const canvas = document.getElementById('snow-canvas');
+const ctx = canvas.getContext('2d');
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const lightningBolts = [];
+const numLightningBolts = 20;
+
+function createLightningBolt() {
+  const x = Math.random() * canvas.width;
+  const y = 0;
+  const length = Math.random() * canvas.height * 0.6 + canvas.height * 0.2;
+  const segments = [];
+
+  let currentY = y;
+  let currentX = x;
+
+  while (currentY < y + length) {
+    const nextY = Math.min(currentY + length, currentY + Math.random() * 50 + 20);
+    const nextX = currentX + (Math.random() - 0.5) * 50;
+
+    segments.push({ x1: currentX, y1: currentY, x2: nextX, y2: nextY });
+    currentY = nextY;
+    currentX = nextX;
+  }
+
+  lightningBolts.push({ segments, life: 100 });
+}
+
+function drawLightning() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  if (Math.random() < 0.05) {
+    createLightningBolt();
+  }
+
+  for (let i = lightningBolts.length - 1; i >= 0; i--) {
+    const bolt = lightningBolts[i];
+
+    ctx.strokeStyle = `rgba(255, 0, 255, ${bolt.life / 100})`; // 青色に変更
+    ctx.lineWidth = 3;
+
+    for (const segment of bolt.segments) {
+      ctx.beginPath();
+      ctx.moveTo(segment.x1, segment.y1);
+      ctx.lineTo(segment.x2, segment.y2);
+      ctx.stroke();
+    }
+
+    bolt.life -= 2;
+
+    if (bolt.life <= 0) {
+      lightningBolts.splice(i, 1);
+    }
+  }
+
+  requestAnimationFrame(drawLightning);
+}
+
+drawLightning();
+
+window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+});
+
+</script>
+
+<div class="bonbon">
+  <a href="/ma①/index.html" class="bon" >スタート</a>
+  <p id=pa>暴風プロジェクト</p>
+</div>
+
+  <script src="main.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+body {
+  background-color: black; 
+  background-image: url('/Slayer-box/img-box2/Screenshot_20250317-121224~2.png');
+  background-size: cover; /* または contain, 100% 100% */
+  background-repeat: no-repeat; /* 画像を繰り返さない */
+  background-position: 50% -35%; /* 水平方向に中央、垂直方向に上から20%の位置に表示 */
+}
+
+.bonbon{
+  color: white;
+}
+
+.bon {
+  background-color: skyblue;
+  color: white;
+  padding: 10px 20px; /* パディングを追加 */
+  text-decoration: none;
+  border-radius: 5px; /* 角を丸くする */
+  position: absolute; /* 絶対配置にする */
+  bottom: 150px; /* 下からの距離 */
+  left: 50%; /* 水平方向中央 */
+  transform: translateX(-50%); /* 水平方向中央揃え */
+}
+
+.bonbon a{
+  text-decoration: none;
+  color: inherit;
+  pointer-events: none;
+}
+
+
+
+#snow-canvas {
+  position: fixed; /* 画面に固定 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* 他の要素より背面に配置 */
+  pointer-events: none; /* マウスイベントを透過 */
+}
+
+
+#pa{
+  font-size: 10px;
+  color: papayawhip;
+  padding: 10px 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 25px;
+}
+
+
+
+#Coin {
+  width: 84px;
+  height: 25px;
+  background-color: #f3f3f3;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  position: absolute;
+  top: 15px;
+  left: 80%;
+  display: flex;
+  transform: translateX(-50%); /* 修正 */
+  justify-content: center;
+  align-items: center; /* 垂直方向の中央揃えも追加 */
+  appearance: none; /* 追加 */
+  z-index: 3;
+}
+
+
+
+
+
+
