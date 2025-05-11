@@ -76,4 +76,24 @@ body {
 
 
 
+#Coin2 {
+  width: 90px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  position: absolute;
+  top: 15px;
+  left: 20%;
+  display: flex;
+  transform: translateX(-50%); /* 修正 */
+  justify-content: center;
+  align-items: center; /* 垂直方向の中央揃えも追加 */
+  appearance: none; /* 追加 */
+  z-index: 3;
+}
+
+
 
