@@ -1,6 +1,9 @@
 var modal = document.getElementById("myModal");
+var modal2 = document.getElementById("myModal2")
 var btn = document.getElementById("Coin");
+var btn2 = document.getElementById("Coin2");
 var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close2")[0];
 var openSound = new Audio("/sound-box/PC-Mouse06-1.mp3"); // モーダル開く音
 var closeSound = new Audio("/sound-box/PC-Mouse06-1.mp3"); // モーダル閉じる音
 
@@ -30,6 +33,27 @@ function setBackgroundVolume() {
 setClickVolume();
 setBackgroundVolume();
 
+btn2.onclick = function () {
+  modal2.style.display = "block";
+  openSound.currentTime = 0;
+  openSound.play();
+};
+
+span2.onclick = function () {
+  modal2.style.display = "none";
+  closeSound.currentTime = 0;
+  closeSound.play();
+};
+
+window.onclick = function (event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+    closeSound.currentTime = 0;
+    closeSound.play();
+  }
+};
+
+
 btn.onclick = function () {
   modal.style.display = "block";
   openSound.currentTime = 0;
@@ -49,6 +73,10 @@ window.onclick = function (event) {
     closeSound.play();
   }
 };
+
+
+
+
 
 backgroundAudio.addEventListener('load', () => {
   backgroundAudio.volume = backgroundVolume; // 初期ボリュームを設定
