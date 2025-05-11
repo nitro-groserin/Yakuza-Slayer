@@ -283,6 +283,17 @@ window.addEventListener('resize', () => {
 
   <script src="main.js"></script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const isRedirected = urlParams.get('redirected');
+      const startButton = document.querySelector('.bonbon a.bon');
+
+      if (isRedirected === 'true' && startButton) {
+        startButton.style.display = 'block';
+      }
+    });
+  </script>
 
 </body>
 </html>
