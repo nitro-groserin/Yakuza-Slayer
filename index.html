@@ -62,6 +62,64 @@
   pointer-events: none;
 }
 
+
+.modal2 {
+  display: none; /* 初期状態では非表示 */
+  position: fixed; /* 画面に固定 */
+  z-index: 1; /* 最前面に表示 */
+  left: 0;
+  top: 0;
+  width: 100%; /* 全幅 */
+  height: 100%; /* 全高 */
+  overflow: auto; /* コンテンツが多ければスクロール可能 */
+  background-color: rgba(0, 0, 0, 0.4); /* 背景を少し暗くする */
+}
+
+.modal2-content {
+  background-image: url('/Slayer-box/img-box2/Screenshot_20250308-231629~4 (1).png');
+  background-size: 100% 100%; /* または contain, cover など */
+  background-repeat: no-repeat;
+  background-color: #fefefe;
+  margin: 15% auto; /* 中央に配置 */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* 幅を調整 */
+  height: 500px;
+}
+
+.close2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#myModal2 p{
+  color: black;
+  font-size: 20px;
+  left: 20%;
+  position: absolute;
+  top: 80px;
+  text-align: center;
+}
+
+.modal2-content a{
+  color: red;
+  position: absolute;
+  left: 85px;
+  top: 150px;
+  pointer-events: none;
+}
+
+
+
 body { 
   margin: 0; 
   overflow: hidden; 
@@ -81,11 +139,12 @@ canvas { display: block; }
   <div class="modal-content">
     <span class="close">&times;</span>
     
-    <p>100円でご購入後<br >
+    <p>100円でご購入後<br>
     ゲームをプレイできます</p>
     <a href="https://buy.stripe.com/test_eVacQg5Vj98o4r6144">こちらをクリックしてお支払い</a>
     <br>
     </p>
+  
     
     
   </div>
@@ -164,8 +223,62 @@ window.addEventListener('resize', () => {
 </script>
 
 <div class="bonbon">
-  <a href="/ma①/index.html" class="bon" >スタート</a>
+  <a href="/ma①/index999.html" class="bon" >スタート</a>
   <p id=pa>暴風プロジェクト</p>
+</div>
+
+<button id="Coin2">
+  <p class="">Information</p>
+</button>
+
+<div id="myModal2" class="modal2">
+  <div class="modal2-content">
+    <span class="close2">&times;</span>
+    
+    
+    <h2>特定商取引法に基づく表記</h2>
+<table>
+  <tr>
+    <th>事業者名</th>
+    <td>クッキーたろ株式会社</td>
+  </tr>
+  <tr>
+    <th>代表者名</th>
+    <td>クッキーたろ</td>
+  </tr>
+  <tr>
+    <th>所在地</th>
+    <td>東京都〇〇区〇〇 1-2-3</td>
+  </tr>
+  <tr>
+    <th>連絡先</th>
+    <td>TEL: 0104-01-079276 / メールアドレス: tantantarou99@gmail.com</td>
+  </tr>
+  <tr>
+    <th>販売価格</th>
+    <td>各商品・サービスページに表示（税込）</td>
+  </tr>
+  <tr>
+    <th>支払い方法</th>
+    <td>クレジットカード決済、銀行振込</td>
+  </tr>
+  <tr>
+    <th>支払い時期</th>
+    <td>クレジットカード決済：ご注文時 / 銀行振込：ご注文後7日以内</td>
+  </tr>
+  <tr>
+    <th>商品の引渡時期またはサービスの提供時期</th>
+    <td>ご注文後、通常3営業日以内に発送 / サービス開始日は別途ご案内</td>
+  </tr>
+  <tr>
+    <th>返品・交換について</th>
+    <td>商品に欠陥がある場合を除き、返品・交換は原則としてお受けできません。</td>
+  </tr>
+</table>
+
+
+  
+  </div>
 </div>
 
   <script src="main.js"></script>
@@ -173,7 +286,6 @@ window.addEventListener('resize', () => {
 
 </body>
 </html>
-
 
 
 
