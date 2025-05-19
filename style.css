@@ -97,3 +97,24 @@ body {
 
 
 
+
+.footer {
+  background-color: #f0f0f0;
+  color: #808080;
+  text-align: center;
+  justify-content: center;
+  font-size: 10px;
+  position: absolute; /* 絶対配置 */
+  bottom: 0; /* 親要素の下端からの距離を0にする */
+  left: 0; /* 親要素の左端からの距離を0にする */
+  width: 100%; /* 親要素の幅いっぱいに広げる */
+  height: 30px;
+}
+
+
+
+
+
+
+
+
