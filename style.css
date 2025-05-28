@@ -1,6 +1,6 @@
 body {
   background-color: black; 
-  background-image: url('/Slayer-box/img-box2/Screenshot_20250317-121224~2.png');
+  background-image: url('Screenshot_20250317-121224~2.png');
   background-size: cover; /* または contain, 100% 100% */
   background-repeat: no-repeat; /* 画像を繰り返さない */
   background-position: 50% -35%; /* 水平方向に中央、垂直方向に上から20%の位置に表示 */
@@ -76,24 +76,9 @@ body {
 
 
 
-#Coin2 {
-  width: 90px;
-  height: 25px;
-  background-color: black;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  position: absolute;
-  top: 15px;
-  left: 20%;
-  display: flex;
-  transform: translateX(-50%); /* 修正 */
-  justify-content: center;
-  align-items: center; /* 垂直方向の中央揃えも追加 */
-  appearance: none; /* 追加 */
-  z-index: 3;
-}
+
+
+
 
 
 
@@ -114,6 +99,101 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+/* モーダルを閉じた状態（初期設定） */
+.modal3 {
+    display: none; /* 初期状態では非表示 */
+    position: fixed; /* 画面に固定 */
+    z-index: 1000; /* 他の要素より手前に表示 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* 半透明の背景 */
+    overflow: auto; /* コンテンツが多い場合にスクロール可能にする */
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+}
+
+/* モーダルコンテンツ */
+.modal-content3 {
+    background-color: #fefefe;
+    margin: 15% auto; /* 画面中央に配置（垂直方向は適宜調整） */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* モーダルの幅 */
+    max-width: 500px; /* 最大幅 */
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn3 0.3s ease-out; /* フェードインアニメーション */
+}
+
+/* 閉じるボタン */
+.close-btn3 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn3:hover,
+.close-btn3:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* フェードインアニメーション */
+@keyframes fadeIn3 {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* フェードアウトアニメーション（JavaScriptでクラスを付与） */
+.modal3.fade-out3 .modal-content3 {
+    animation: fadeOut3 0.3s ease-in forwards;
+}
+
+@keyframes fadeOut3 {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-20px); }
+}
+
+/* モーダルを開いた時にflexboxで中央揃えにするためのスタイル */
+.modal3.open3 {
+    display: flex;
+}
+
+
+
+#openModalBtn3 {
+  width: 90px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  position: absolute;
+  top: 15px;
+  left: 20%;
+  display: flex;
+  transform: translateX(-50%); /* 修正 */
+  justify-content: center;
+  align-items: center; /* 垂直方向の中央揃えも追加 */
+  appearance: none; /* 追加 */
+  z-index: 3;
+}
 
 
 
