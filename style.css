@@ -108,32 +108,43 @@ body {
 
 
 
-/* モーダルを閉じた状態（初期設定） */
+
+
+/* モーダル共通スタイル */
 .modal3 {
     display: none; /* 初期状態では非表示 */
     position: fixed; /* 画面に固定 */
-    z-index: 1000; /* 他の要素より手前に表示 */
+    z-index: 1000; /* 他の要素より手前に表示（必要に応じて調整） */
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7); /* 半透明の背景 */
     overflow: auto; /* コンテンツが多い場合にスクロール可能にする */
+    /* モーダルを開いた時にflexboxで中央揃えにするためのスタイル */
     justify-content: center; /* 水平方向の中央揃え */
     align-items: center; /* 垂直方向の中央揃え */
+    padding-top: 20px; /* 上からの余白を調整 */
+}
+
+/* モーダルを開いた時に表示 */
+.modal3.open3 {
+    display: flex;
 }
 
 /* モーダルコンテンツ */
 .modal-content3 {
     background-color: #fefefe;
-    margin: 15% auto; /* 画面中央に配置（垂直方向は適宜調整） */
-    padding: 20px;
+    margin: 2% auto; /* 上下からの余白を調整し、中央に配置 */
+    padding: 30px; /* 内側のパディングを増やす */
     border: 1px solid #888;
-    width: 80%; /* モーダルの幅 */
-    max-width: 500px; /* 最大幅 */
-    border-radius: 8px;
+    width: 90%; /* モーダルの幅 */
+    max-width: 800px; /* 最大幅 */
+    border-radius: 10px; /* 角を丸くする */
     position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* 影を追加 */
+    max-height: 95vh; /* モーダル内の高さを制限 */
+    overflow-y: auto; /* モーダル内にスクロールバーを表示 */
     animation: fadeIn3 0.3s ease-out; /* フェードインアニメーション */
 }
 
@@ -141,9 +152,10 @@ body {
 .close-btn3 {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 32px; /* 閉じるボタンを大きくする */
     font-weight: bold;
     cursor: pointer;
+    line-height: 1; /* 行の高さを調整 */
 }
 
 .close-btn3:hover,
@@ -169,32 +181,124 @@ body {
     to { opacity: 0; transform: translateY(-20px); }
 }
 
-/* モーダルを開いた時にflexboxで中央揃えにするためのスタイル */
-.modal3.open3 {
-    display: flex;
+/* モーダル内のメインタイトル */
+.modal-content3 h1 {
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 30px;
+    font-size: 1.8em;
 }
 
+/* モーダル内のセクションタイトル */
+.modal-content3 h2 {
+    font-size: 1.5em;
+    color: #0056b3;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+    margin-top: 40px; /* 各セクションの上マージンを増やす */
+    margin-bottom: 20px;
+}
 
+/* モーダル内の利用規約の条文タイトルなど */
+.modal-content3 h3 {
+    font-size: 1.2em;
+    color: #0056b3;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
 
+.modal-content3 p {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.modal-content3 ol,
+.modal-content3 ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.modal-content3 li {
+    margin-bottom: 5px;
+}
+
+strong {
+    color: #0056b3;
+}
+
+/* モーダル内のテーブル */
+.modal-content3 table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.modal-content3 th,
+.modal-content3 td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.modal-content3 th {
+    background-color: #f2f2f2;
+    width: 30%;
+}
+
+/* 区切り線 */
+.modal-content3 hr {
+    margin: 40px 0; /* 区切り線の上下にスペースを増やす */
+    border: 0;
+    border-top: 1px dashed #ccc; /* 点線に変更 */
+}
+
+/* モーダル内の冒頭メッセージ */
+.modal-intro-message3 {
+    background-color: #e0f7fa; /* 薄い水色の背景 */
+    border-left: 5px solid #007bff; /* 左側に青いライン */
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #01579b;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* モーダルを開くボタン */
 #openModalBtn3 {
-  width: 90px;
-  height: 25px;
-  background-color: black;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  position: absolute;
-  top: 15px;
-  left: 20%;
-  display: flex;
-  transform: translateX(-50%); /* 修正 */
-  justify-content: center;
-  align-items: center; /* 垂直方向の中央揃えも追加 */
-  appearance: none; /* 追加 */
-  z-index: 3;
+    width: 90px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    left: 20%;
+    display: flex;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    appearance: none;
+    z-index: 3;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* ホバー・アクティブ効果のためのトランジション */
 }
 
+#openModalBtn3:hover {
+    background-color: #0056b3;
+    transform: translateX(-50%) translateY(-2px); /* 中央揃えを維持しつつ上に少し移動 */
+}
+
+#openModalBtn3:active {
+    transform: translateX(-50%) translateY(0); /* 中央揃えを維持しつつ元に戻す */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
 
 
 
