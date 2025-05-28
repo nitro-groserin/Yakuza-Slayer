@@ -20,7 +20,7 @@
 }
 
 .modal-content {
-  background-image: url('/Slayer-box/img-box2/Screenshot_20250308-231629~4 (1).png');
+  background-image: url('Screenshot_20250308-231629~4 (1).png');
   background-size: 100% 100%; /* または contain, cover など */
   background-repeat: no-repeat;
   background-color: #fefefe;
@@ -62,61 +62,6 @@
   pointer-events: none;
 }
 
-
-.modal2 {
-  display: none; /* 初期状態では非表示 */
-  position: fixed; /* 画面に固定 */
-  z-index: 1; /* 最前面に表示 */
-  left: 0;
-  top: 0;
-  width: 100%; /* 全幅 */
-  height: 100%; /* 全高 */
-  overflow: auto; /* コンテンツが多ければスクロール可能 */
-  background-color: rgba(0, 0, 0, 0.4); /* 背景を少し暗くする */
-}
-
-.modal2-content {
-  background-image: url('/Slayer-box/img-box2/Screenshot_20250308-231629~4 (1).png');
-  background-size: 100% 100%; /* または contain, cover など */
-  background-repeat: no-repeat;
-  background-color: #fefefe;
-  margin: 15% auto; /* 中央に配置 */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* 幅を調整 */
-  height: 500px;
-}
-
-.close2 {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close2:hover,
-.close2:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#myModal2 p{
-  color: black;
-  font-size: 20px;
-  left: 20%;
-  position: absolute;
-  top: 80px;
-  text-align: center;
-}
-
-.modal2-content a{
-  color: red;
-  position: absolute;
-  left: 85px;
-  top: 150px;
-  pointer-events: none;
-}
 
 
 
@@ -230,17 +175,15 @@ window.addEventListener('resize', () => {
 <footer class="footer">
   <p>© 2025 ミュウゾー</p>
 </footer>
-  
-<button id="Coin2">
-  <p class="">Information</p>
-</button>
 
-<div id="myModal2" class="modal2">
-  <div class="modal2-content">
-    <span class="close2">&times;</span>
-    
-    
-    <h2>特定商取引法に基づく表記</h2>
+
+
+    <button id="openModalBtn3">Information</button>
+
+    <div id="myModal3" class="modal3">
+        <div class="modal-content3">
+            <span class="close-btn3">&times;</span>
+            <h2>特定商取引法に基づく表記</h2>
 <table>
   <tr>
     <th>事業者名</th>
@@ -280,10 +223,12 @@ window.addEventListener('resize', () => {
   </tr>
 </table>
 
+        </div>
+    </div>
 
-  
-  </div>
-</div>
+
+
+
 
   <script src="main.js"></script>
 
