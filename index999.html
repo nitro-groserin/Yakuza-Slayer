@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>反社スレイヤー</title>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-size: 3em;
+  white-space: nowrap;
+}
+
+#intermission1, #intermission2 {
+  opacity: 0;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-content {
+  font-size: 18px;
+  border-radius: 20px;
+  background-color: #fefefe;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  color: black;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  animation: fadeInButton 3s forwards;
+  animation-delay: 18s;
+}
+
+.next-button {
+  padding: 10px 20px;
+  background-color: skyblue;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+@keyframes fadeInButton {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animation {
+  position: relative;
+  width: 390px;
+  height: 400px;
+  margin: 0 auto;
+  top: -150px;
+}
+
+.animation img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 20px;
+}
+
+.animation img:nth-child(1) { animation: fade1 3s forwards; }
+.animation img:nth-child(2) { animation: fade2 3s forwards; animation-delay: 3s; }
+.animation img:nth-child(3) { animation: fade3 3s forwards; animation-delay: 6s; }
+.animation img:nth-child(4) { animation: fade4 3s forwards; animation-delay: 9s; }
+.animation img:nth-child(5) { animation: fade5 3s forwards; animation: fade5 3s forwards; animation-delay: 12s; }
+
+@keyframes fade1 { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes fade2 { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes fade3 { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes fade4 { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes fade5 { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+.fade-in-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-size: 45px;
+  color: red;
+  animation: fadeInText 3s forwards;
+  animation-delay: 15s;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.fade-in-text img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 350px;
+}
+
+@keyframes fadeInText {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#preContainer {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<div id="intermission1">第一章
+<p>The world is</p>
+<p>full of,</p>
+<p>antisocial people...</p>
+</div>
+
+<div id="intermission2" style="display: none;">
+<p>世界はアンチで</p>
+<p>満ちている...</p>
+</div>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <p>この物語はフィクションです</p>
+    <button id="startAnimation">開始</button>
+  </div>
+</div>
+
+
+<div class="animation" style="display: none;">
+  <img src="/Slayer-box/img-box2/Screenshot_20250327-174926~5.png" alt="Image 1">
+  <img src="/Slayer-box/img-box2/Screenshot_20250327-130653~3.png" alt="Image 2">
+  <img src="/Slayer-box/img-box2/Screenshot_20250327-130629~4.png" alt="Image 3">
+  <img src="/Slayer-box/img-box2/Screenshot_20250327-173740~2.png" alt="Image 4">
+  <img src="/Slayer-box/img-box2/media_572056139460788126_1743169670.png" alt="Image 5">
+  <div class="fade-in-text">
+    
+    <img src="/img-box/無題155_20250329132501 (1).png">
+    
+    
+    <div class="button-container" style="opacity: 0;">
+      <a href="/1-1(第一章、第1話)スパン/index1.html" class="next-button">Episode.1へ</a>
+    </div>
+  </div>
+</div>
+
+<audio id="soundEffect" src="/sound-box/sen_ge_iron_syoutotu05.mp3"></audio>
+
+<script>
+const modal = document.getElementById("myModal");
+const intermission1 = document.getElementById("intermission1");
+const intermission2 = document.getElementById("intermission2");
+const animationDiv = document.querySelector(".animation");
+const soundEffect = document.getElementById("soundEffect");
+
+document.getElementById("startAnimation").onclick = function() {
+  modal.style.display = "none";
+  intermission1.style.animation = "fadeIn 2s ease-in-out forwards";
+
+  setTimeout(function() {
+    soundEffect.currentTime = 0;
+    soundEffect.play();
+  }, 1000);
+
+  setTimeout(function() {
+    intermission1.style.display = "none";
+    intermission2.style.display = "block";
+    intermission2.style.animation = "fadeIn 2s ease-in-out forwards";
+
+    setTimeout(function() {
+      intermission2.style.display = "none";
+      animationDiv.style.display = "block";
+    }, 5000);
+  }, 4500);
+}
+</script>
+
+<script src="main999.js"></script>
+
+</body>
+</html>
+
+
+
+
