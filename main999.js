@@ -1,6 +1,6 @@
 const audioPaths = [
-  '/sound-box/City_Ambi-Street02-1.mp3', // 1曲目
-  '/sound-box/City_Ambi-Street02-1.mp3'  // 2曲目
+  'City_Ambi-Street02-1.mp3', // 1曲目
+  'City_Ambi-Street02-1.mp3'  // 2曲目
 ];
 let audio = new Audio(audioPaths[0]); // 最初に1曲目を読み込む
 let currentTrack = 0; // 現在再生中の曲のインデックス
