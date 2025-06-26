@@ -1,0 +1,529 @@
+  <!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>反社スレイヤー</title>
+  <link rel="stylesheet" href="style9.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script src="https//js.stripe.com/v3/"></script>
+
+
+<style>
+.modal {
+  display: none; /* 初期状態では非表示 */
+  position: fixed; /* 画面に固定 */
+  z-index: 100; /* 最前面に表示 */
+  left: 0;
+  top: 0;
+  width: 100%; /* 全幅 */
+  height: 100%; /* 全高 */
+  overflow: auto; /* コンテンツが多ければスクロール可能 */
+  background-color: rgba(0, 0, 0, 0.4); /* 背景を少し暗くする */
+}
+
+.modal-content {
+  background-image: url('/Slayer-box/img-box2/Screenshot_20250308-231629~4 (1).png');
+  background-size: 100% 100%; /* または contain, cover など */
+  background-repeat: no-repeat;
+  background-color: #fefefe;
+  margin: 15% auto; /* 中央に配置 */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* 幅を調整 */
+  height: 390px;
+}
+
+#myModal p{
+  color: black;
+  font-size: 20px;
+  left: 20%;
+  position: absolute;
+  top: 80px;
+  text-align: center;
+}
+
+
+.modal-content a{
+  color: red;
+  position: absolute;
+  left: 85px;
+  top: 175px;
+  pointer-events: none;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal2 {
+  display: none; /* 初期状態では非表示 */
+  position: fixed; /* 画面に固定 */
+  z-index: 1; /* 最前面に表示 */
+  left: 0;
+  top: 0;
+  width: 100%; /* 全幅 */
+  height: 100%; /* 全高 */
+  overflow: auto; /* コンテンツが多ければスクロール可能 */
+  background-color: rgba(0, 0, 0, 0.4); /* 背景を少し暗くする */
+}
+
+.modal-content2 {
+  background-image: url('');
+  background-size: 100% 100%; /* または contain, cover など */
+  background-repeat: no-repeat;
+  background-color: #fefefe;
+  margin: 15% auto; /* 中央に配置 */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* 幅を調整 */
+  height: 390px;
+}
+
+.close2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+
+<button id="Coin">
+  <p class="">コイン</p>
+</button>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+    <p>500円でご購入後<br>
+    反社スレイヤー<br>
+    Episode.2をプレイできます</p>
+    <a href="https://buy.stripe.com/test_dR66rSabz4S8e1G7st">こちらをクリックしてお支払い</a>
+    <br>
+    </p>
+    
+    
+  </div>
+</div>
+
+
+<div class="div3">
+  <img src="/Slayer-box/img-box3/1742184802795~2.jpg" width="420px" height="420px" alt="背">
+</div>
+
+
+<div class="div1">
+  <img src="/Slayer-box/img-box4/Screenshot_20250424-141354~2 (1).png" width="310px" height="430px">
+</div>
+
+<div class="div2">
+  <img src="/Slayer-box/Yakuza-box/Screenshot_20250425-155517~3 (1)~2 (1)~2 (1).png" width="260px" height="400px" alt="タク運">
+</div>
+
+
+
+<div class="div4">
+  <img src="/Slayer-box/img-box2/無題147_20250318105938~2 (1).png" width="310px" height="430px" alt="おとっ">
+</div>
+
+<div class="div5">
+  <img src="/Slayer-box/img-box7/Screenshot_20250517-163743~2 (1).png" width="280px" height="450px" alt="バガ">
+</div>
+
+<div class="div6">
+  <img src="/Slayer-box/img-box2/無題152_20250320180556~2 (1).png" width="230px" height="620px" alt="ちん">
+</div>
+
+<div class="div7">
+  <img src="/img-box/Screenshot_20250408-112715~2.png" width="400px" height="300px" alt="か">
+</div>
+
+
+
+<div class="div8">
+  <img src="/Slayer-box/img-box5/Screenshot_20250515-093245~3.png" width="420px" height="420px" alt="背②中">
+</div>
+
+
+<div class="div9">
+  <img src="/Slayer-box/img-box7/Screenshot_20250519-185134~2 (1).png" width="350px" height="150px" alt="タク">
+</div>
+
+
+
+<div class="div10">
+  <video src="" width="400px" height="300px">
+</div>
+  
+
+
+<div id="preContainer">
+
+  
+
+    <pre id="pre419" class="p1" style="display: none;">
+<span>「小塚ァーッ!!」</span>
+    <div class="button-flex">
+      <a href="/1-1(第一章、第8話)スパン/index8.html" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre420" class="p1" style="display: none;">
+ <span>真正面にそびえた鉄の扉を全力失踪で蹴破り、スライディングと共に倉庫へと踏み入る...。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  
+  
+    <pre id="pre421" class="p1" style="display: none;">
+ <span>バゴンと吹き飛ばされた鉄の扉がかるく宙を舞い...。
+ 落下の衝撃と同時に、激しい火花を散らして鎮まり返る...。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+    <pre id="pre422" class="p1" style="display: none;">
+ <span>しんとした空気感に、まとわりつくような砂埃...。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre423" class="p1" style="display: none;">
+ <span>小塚はーー見れば浅草の興行のヤクザに取り囲まれていた最中だった...。
+</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+    <pre id="pre424" class="p1" style="display: none;">
+<span>「あッ!!　兄貴〜ッ!!」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre425" class="p1" style="display: none;">
+<span>「よぉ小塚ァ...!!
+　どうやら...無事に生きてるみてえだなぁ...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+    <pre id="pre426" class="p1" style="display: none;">
+<span>「しーー死ぬかと思いましたよ〜!!」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre427" class="p1" style="display: none;">
+ <span>泣き叫ぶ小塚と俺の面会を遮るように...。
+ ゾロゾロと浅草興行のヤクザが首を連ねる...。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+    <pre id="pre428" class="p1" style="display: none;">
+<span>「よぉ？　アンタ何者だ...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre429" class="p1" style="display: none;">
+<span>「俺の名前を知る必要はない...。
+　生憎と下衆に名乗る名前は...覚えていないんでな...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+    <pre id="pre430" class="p1" style="display: none;">
+<span>「そうかい...。
+　それで今日は...俺たちに何の用かな...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre431" class="p1" style="display: none;">
+<span>「用があるのは...そっちの覆面野郎でな...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+    <pre id="pre432" class="p1" style="display: none;">
+<span>「悪いがそいつぁ...俺の舎弟なんだ...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre433" class="p1" style="display: none;">
+<span>「舎弟...？　アーなるほど...やはりそういうことか...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+    <pre id="pre434" class="p1" style="display: none;">
+<span>「つまりお前は...六郎会の本部の人間と言う訳か...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre435" class="p1" style="display: none;">
+<span>「浅草興行が、矢吹組に代替えしたのは知っている...。
+　それに伴い...今の実権は欧米マフィアであるお前らーーワンペイが握っていることも...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+    <pre id="pre436" class="p1" style="display: none;">
+<span>「そうだ...。そしてその浅草興行の組長をハジいたのは、お前らだと言う筋書きだ...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+    <pre id="pre437" class="p1" style="display: none;">
+<span>「...？　どういう意味だ...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+    <pre id="pre438" class="p1" style="display: none;">
+<span>「お前らは...まだ何も知らないようだな...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+    <pre id="pre439" class="p1" style="display: none;">
+<span>「俺たちが...何も知らない...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+    <pre id="pre440" class="p1" style="display: none;">
+<span>「そうだ...。お前たちは...これから自分たちの身に降りかかる火の粉を何も知らない...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+    <pre id="pre441" class="p1" style="display: none;">
+<span>「火の粉は...やがて燃え移り...。
+　気が付けばこの町を燃やし尽くす業火となりうる...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+    <pre id="pre442" class="p1" style="display: none;">
+<span>「一体お前は...何の話をしているんだ...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+    <pre id="pre443" class="p1" style="display: none;">
+<span>「お前たちが...知る必要性のない話さ...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+    <pre id="pre444" class="p1" style="display: none;">
+<span>「そうか...ならば力づくで聞き出すとしよう...ッ!!」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+    <pre id="pre445" class="p1" style="display: none;">
+<span>「やれるもんなら...やってみな...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+    <pre id="pre446" class="p1" style="display: none;">
+<span>「行くぞ...ッ!!」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+    <pre id="pre447" class="p1" style="display: none;">
+<span>「...かかって来いッ!!」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="/1-1(第一章、第10話)スパン/index10.html" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+
+
+
+</div>
+
+<script src="main9.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
