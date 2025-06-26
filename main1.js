@@ -1,5 +1,5 @@
 const audioPaths = [
-  { src: '/sound-box/8月まで休む！！！！！！（KAGE）.mp3', volume: 0.2, id: 'siren' },
+  { src: '8月まで休む！！！！！！（KAGE）.mp3', volume: 0.2, id: 'siren' },
   { src: '', volume: 1.0, id: 'bonfire' }
 ];
 
