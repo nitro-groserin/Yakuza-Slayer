@@ -359,24 +359,8 @@ window.addEventListener('resize', () => {
   <script src="main.js"></script>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const isRedirected = urlParams.get('redirected');
-  const startButton = document.querySelector('.bonbon a.bon'); // 「スタート」ボタン
 
-  if (startButton) {
-    // まず、初期状態ではクリックできないようにする
-    // これでCSSのpointer-events: none;の役割をJavaScriptが担う
-    startButton.style.pointerEvents = 'none'; 
-    startButton.style.display = 'none'; // 初期状態は非表示にする
-  }
-
-  if (isRedirected === 'true' && startButton) {
-    // redirected=true の場合に表示し、クリックできるようにする
-    startButton.style.display = 'block';
-    startButton.style.pointerEvents = 'auto'; // これでクリック可能になる
-  }
-});
+    
 
   
 
