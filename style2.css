@@ -1,0 +1,466 @@
+body {
+  overflow: hidden;
+  background-image: url('/Slayer-box/img-box5/Screenshot_20250510-104244~3.png');
+  background-size: contain; /* 画像を拡大縮小して要素全体を覆う */
+  background-repeat: no-repeat; /* 画像を繰り返さない */
+  width: 95%;
+  height: 100vh; /* viewportの高さに合わせる */
+  background-color: black;
+}
+
+
+.p1{
+  background-color: #3f3f3f ;
+  color:white;
+  padding: 0px 0px 0px 10px;
+  font-size: 24px;
+  border:solid 2px whitesmoke;
+  box-sizing: border-box;
+  border-radius: 3px;
+  white-space: pre-wrap ;
+  overflow: auto;
+}
+
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
+#preContainer{
+  position: absolute;
+  top: 510px;
+  width: 400px;
+  z-index: 99;
+}
+
+#preContainer pre {
+  overflow-y: auto; /* スクロールバーを表示 */
+  height: 230px;
+}
+
+.div1{
+  position: absolute;
+  left: 140px;
+  top: 105px;
+  z-index: 9;
+  display: non;
+}
+
+
+
+.div2{
+  position: absolute;
+  left: 0;
+  top: 100px;
+  display: none;
+  z-index: 0;
+}
+
+.div3{
+  position: absolute;
+  left: 0;
+  top: 0px;
+  display: none;
+}
+
+
+.div4{
+  position: absolute;
+  border-radius: 50%;
+  left: 140px;
+  top: 200px;
+  display: none;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.div5{
+  position: absolute;
+  border-radius: 1%;
+  left: 0px;
+  top: 260px;
+  display: none;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.div6{
+  position: absolute;
+  border-radius: 1%;
+  left: 0px;
+  top: 0px;
+  display: none;
+  overflow: hidden;
+}
+
+
+.div7{
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  border-radius: 1%;
+  left: 9px;
+  top: 200px;
+  display: none;
+  overflow: hidden;
+  z-index: 3;
+}
+
+
+
+
+.div8{
+  position: absolute;
+  left: 0;
+  top: 0px;
+  display: none;
+}
+
+
+
+.div9{
+  position: absolute;
+  left: 0;
+  top: 150px;
+  display: none;
+  z-index: 5;
+}
+
+
+
+
+.div10{
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  border-radius: 1%;
+  left: 9px;
+  top: 200px;
+  display: none;
+  overflow: hidden;
+}
+
+
+
+
+.button-flex{
+  display: flex;
+  justify-content: space-betwen;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+#nextButton1{
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  background-color: skyblue; /* 緑色 */
+  border: none;
+  color: white;
+  top: 195px;
+  left: 300px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+  
+
+
+
+#backButton2{
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  background-color: skyblue;
+  border: none;
+  color: white;
+  top: 195px;
+  left: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+
+.autoPlayButton {
+  position: absolute;
+  width: 105px;
+  height: 30px;
+  background-color: skyblue; /* 緑色 */
+  border: none;
+  color: white;
+  top: 195px;
+  left: 145px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+
+
+.autoPlayButton:hover {
+  background-color: turquoise; /* ホバー時の色 */
+}
+
+
+
+.button-flex a {
+  text-align: center; /* テキストを水平方向中央寄せ */
+  padding: 0px;
+  line-height: 1.8; /* 必要に応じて行の高さを調整 */
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+#Coin {
+  width: 84px;
+  height: 25px;
+  background-color: #f3f3f3;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  position: absolute;
+  top: 15px;
+  left: 80%;
+  display: flex;
+  transform: translateX(-50%); /* 修正 */
+  justify-content: center;
+  align-items: center; /* 垂直方向の中央揃えも追加 */
+  appearance: none; /* 追加 */
+  z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+#nextButtonPre95{
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  background-color: skyblue; /* 緑色 */
+  border: none;
+  color: white;
+  top: 195px;
+  left: 300px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#backButtonPre95{
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  background-color: skyblue;
+  border: none;
+  color: white;
+  top: 195px;
+  left: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+#nextButtonPre96{
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  background-color: skyblue; /* 緑色 */
+  border: none;
+  color: white;
+  top: 195px;
+  left: 300px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#backButtonPre96{
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  background-color: skyblue;
+  border: none;
+  color: white;
+  top: 195px;
+  left: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+#nextButtonPre97{
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  background-color: skyblue; /* 緑色 */
+  border: none;
+  color: white;
+  top: 195px;
+  left: 300px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#backButtonPre97{
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  background-color: skyblue;
+  border: none;
+  color: white;
+  top: 195px;
+  left: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+#nextButtonPre98{
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  background-color: skyblue; /* 緑色 */
+  border: none;
+  color: white;
+  top: 195px;
+  left: 300px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#backButtonPre98{
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  background-color: skyblue;
+  border: none;
+  color: white;
+  top: 195px;
+  left: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+
+
+#nextButtonPre99{
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  background-color: skyblue; /* 緑色 */
+  border: none;
+  color: white;
+  top: 195px;
+  left: 300px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#backButtonPre99{
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  background-color: skyblue;
+  border: none;
+  color: white;
+  top: 195px;
+  left: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+
+#nextButtonPre93{
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  background-color: skyblue; /* 緑色 */
+  border: none;
+  color: white;
+  top: 195px;
+  left: 300px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+
+
+

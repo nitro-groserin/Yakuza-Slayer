@@ -1,0 +1,1390 @@
+  <!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>反社スレイヤー</title>
+  <link rel="stylesheet" href="style2.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script src="https//js.stripe.com/v3/"></script>
+
+
+<style>
+.modal {
+  display: none; /* 初期状態では非表示 */
+  position: fixed; /* 画面に固定 */
+  z-index: 100; /* 最前面に表示 */
+  left: 0;
+  top: 0;
+  width: 100%; /* 全幅 */
+  height: 100%; /* 全高 */
+  overflow: auto; /* コンテンツが多ければスクロール可能 */
+  background-color: rgba(0, 0, 0, 0.4); /* 背景を少し暗くする */
+}
+
+.modal-content {
+  background-image: url('/Slayer-box/img-box2/Screenshot_20250308-231629~4 (1).png');
+  background-size: 100% 100%; /* または contain, cover など */
+  background-repeat: no-repeat;
+  background-color: #fefefe;
+  margin: 15% auto; /* 中央に配置 */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* 幅を調整 */
+  height: 390px;
+}
+
+#myModal p{
+  color: black;
+  font-size: 20px;
+  left: 20%;
+  position: absolute;
+  top: 80px;
+  text-align: center;
+}
+
+
+.modal-content a{
+  color: red;
+  position: absolute;
+  left: 85px;
+  top: 175px;
+  pointer-events: none;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal2 {
+  display: none; /* 初期状態では非表示 */
+  position: fixed; /* 画面に固定 */
+  z-index: 1; /* 最前面に表示 */
+  left: 0;
+  top: 0;
+  width: 100%; /* 全幅 */
+  height: 100%; /* 全高 */
+  overflow: auto; /* コンテンツが多ければスクロール可能 */
+  background-color: rgba(0, 0, 0, 0.4); /* 背景を少し暗くする */
+}
+
+.modal-content2 {
+  background-image: url('');
+  background-size: 100% 100%; /* または contain, cover など */
+  background-repeat: no-repeat;
+  background-color: #fefefe;
+  margin: 15% auto; /* 中央に配置 */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* 幅を調整 */
+  height: 390px;
+}
+
+.close2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+
+<button id="Coin">
+  <p class="">コイン</p>
+</button>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+    <p>500円でご購入後<br>
+    反社スレイヤー<br>
+    Episode.2をプレイできます</p>
+    <a href="https://buy.stripe.com/test_dR66rSabz4S8e1G7st">こちらをクリックしてお支払い</a>
+    <br>
+    </p>
+    
+    
+  </div>
+</div>
+
+
+<div class="div3">
+  <img src="/Slayer-box/img-box3/1742184802795~2.jpg" width="420px" height="420px" alt="背">
+</div>
+
+
+<div class="div1">
+  <img src="/Slayer-box/img-box4/Screenshot_20250424-141354~2 (1).png" width="310px" height="430px">
+</div>
+
+<div class="div2">
+  <img src="/Slayer-box/img-box5/Screenshot_20250510-130400~2 (1).png" width="230px" height="450px" alt="筋">
+</div>
+
+
+
+<div class="div4">
+  <img src="/Slayer-box/img-box2/無題147_20250318105938~2 (1).png" width="310px" height="430px" alt="おとっ">
+</div>
+
+<div class="div5">
+  <img src="/img-box/1742256820854~2.png" width="220px" height="350px" alt="龍">
+</div>
+
+<div class="div6">
+  <img src="/Slayer-box/img-box2/無題152_20250320180556~2 (1).png" width="230px" height="620px" alt="ちん">
+</div>
+
+<div class="div7">
+  <img src="/img-box/Screenshot_20250408-112715~2.png" width="400px" height="300px" alt="か">
+</div>
+
+
+
+<div class="div8">
+  <img src="/Slayer-box/img-box5/Screenshot_20250515-093245~3.png" width="420px" height="420px" alt="背②中">
+</div>
+
+
+<div class="div9">
+  <img src="/Slayer-box/img-box2/Screenshot_20250419-175549~2.png" width="410px" height="200px" alt="セダ">
+</div>
+
+
+
+<div class="div10">
+  <video src="" width="400px" height="300px">
+</div>
+  
+
+
+<div id="preContainer">
+  
+  <pre id="pre51" class="p1">
+ <span>俺のおとっつぁんが蒸発したのは、俺がまだ青臭いガキの頃だ...。</span>
+    <div class="button-flex">
+      <a href="/1-1(第一章、第1話)スパン/index1.html" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre52" class="p1">
+ <span>10年前...俺は横須賀のとあるカフェテラスに腰を落ち着かせていた...。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+ <pre id="pre53" class="p1">
+<span>「横須賀のドブ坂通りは、小せえ商店街だがカレーが美味え事で有名なんだ...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre54" class="p1">
+<span>「この街が誇る海軍カレーと言やぁ、そりゃあもうシンプルだが絶品と来てる...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre55" class="p1">
+ <span style="display: none;">おとっつぁんはそう言ってテーブル席に腰を落ち着かせると、手にしたメニューを静かに開く。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+
+  <pre id="pre56" class="p1">
+ <span>横須賀のドブ坂通りに設けられた小さなカフェテラス。
+ 名を『ルネラージュ』と呼ばれる三角屋根の一角。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre57" class="p1">
+ <span>俺とおとっつぁんは、昼食の為に二人掛けのテーブル席を挟んでいた。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre58" class="p1">
+<span>「へぇ～。おとっつあんは、本当にカレーが好きなんだねえ...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre59" class="p1">
+ <span>名前は、田村 龍二。
+ それが俺の本名だ。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre60" class="p1">
+ <span>産まれも育ちも横須賀で、実父である田村 三平の一人息子。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre61" class="p1">
+<span>「俺ぁこのカレーが思い出の味でよ?　こいつを食べると死んじまったお母ちゃんのことを、ついつい思い出しちまっていけねえんだ……」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre62" class="p1">
+ <span>うちのおとっつぁんは、見てくれからして少々変わり者だ。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre63" class="p1">
+ <span>日中にも関わらず全身に黒いシャツを着こなし、その上からは紐付きのビデオカメラをぶら下げる。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre64" class="p1">
+ <span>どこかの記者やカメラマンにも見えるラフな格好をしている。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre65" class="p1">
+<span>「死んだお母ちゃんを思い出すのかい？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre66" class="p1">
+ <span>俺には産まれてこの方、お母ちゃんとの思い出が一切ない。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre67" class="p1">
+ <span>母は俺が産まれた頃に他界したらしく...。
+ 理由はどうやら出産による物だったらしい。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre68" class="p1">
+<span>「あぁ...お母ちゃんがよく作ってくれたそのカレーの味がよ？
+　ちょうどこの横須賀カレーとよく似た味付けをしてたんだ...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+
+  <pre id="pre69" class="p1">
+<span>「そりゃあもう...ッ!!
+　美味えのなんのって舌を巻いて...ッ!!」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre70" class="p1">
+<span>「俺ぁ...ッ!!
+　いつでもお母ちゃんの手作りカレーに大はしゃぎしてた訳よ...ッ!!」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre71" class="p1">
+ <span>お母ちゃんとの思い出を語るおとっつぁんは、いつもニコニコしていてとても嬉しそうだ。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre72" class="p1">
+ <span>思い出しているのかも知れない。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+  <pre id="pre73" class="p1">
+ <span>お母ちゃんとの思い出を焼き付けたその瞳の中のフィルムを。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+
+  <pre id="pre74" class="p1">
+<span>「だから俺ぁ...このカレーを食う度によ...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre75" class="p1">
+<span>「そんなお母ちゃんとの大事な思い出を重ねて、いつか再びお母ちゃんと再会できるような気がして来るんだよ...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre76" class="p1">
+<span>「再会かぁ〜。お母ちゃん...天国で元気にしてるのかなぁ...?」
+</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  
+    <pre id="pre80" class="p1">
+<span>「あぁ...!!　そりゃあ勿論さ!!」
+</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+  <pre id="pre81" class="p1">
+<span>「少なくとも地獄に行くよりかは、よっぽどマシな場所に違いねえ...!!」
+</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  <pre id="pre82" class="p1">
+ <span>そう言っておとっつぁんはその場を締め括ると、近くに立っていたウエイターさんに向けて挙手をした。
+</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre83" class="p1">
+<span>「ただいま」と言う一声と共にテーブル席に歩いて来たウエイターは、おとっつあんにペコリと一礼するとポケットからハンディを取り出す。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+    <pre id="pre84" class="p1">
+<span>「ご注文は？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre85" class="p1">
+<span>「この横須賀カレーを二つ」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre86" class="p1">
+<span>「かしこまりました」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre87" class="p1">
+ <span>指先でコツリとメニューを叩いたおとっつぁんに対して、ウエイターは愛想よく会釈を交わす。
+</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+      <pre id="pre88" class="p1">
+ <span>それを見ていたおとっつぁんは、眉間に皺を寄せて怪訝そうな表情を浮かべていた。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+  <pre id="pre89" class="p1">
+<span>「どうかしたの？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre90" class="p1">
+ <span>どうやらこのウエイター。
+ おとっつあんの目には、何か怪しく映ったみたいだ...。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre91" class="p1">
+<span>「ちょっと待ってくれ。
+　アンタ...何かおかしくないか？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+<pre id="pre92" class="p1">
+ <span>すかさずおとっつぁんのツッコミが入る!!
+ 間違いない!!　怪しいぞ!!</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+<pre id="pre93" class="p1" onclick="openModal93()">
+<span>「何か...と言うのは？」</span>
+  <div class="button-flex">
+    <a href="#" id="backButton2" class="button2">戻る</a>
+    <button class="autoPlayButton button">オート再生</button>
+    <a href="#" id="nextButtonPre93" class="button">進む</a>
+  </div>
+</pre>
+
+
+
+  <pre id="pre94" class="p1">
+<span>「パオ？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+<div id="myModal93" class="modal" style="display: none;">
+  <div class="modal-content93">
+    <span class="close" onclick="closeModal93()">&times;</span>
+    <p>選択肢を選んでください</p>
+    <input type="radio" id="choice1" name="choices" value="1">
+    <label for="choice1">A.　頭がおかしい!!</label><br>
+    <input type="radio" id="choice2" name="choices" value="2">
+    <label for="choice2">B.　いや、気のせいか...？</label><br>
+    <input type="radio" id="choice3" name="choices" value="3">
+    <label for="choice3">C.　デカすぎんだろ...!!</label><br>
+    <button onclick="myFunction93()">決定</button>
+  </div>
+</div>
+
+<pre id="pre95" class="p1">
+<span>「頭...？
+　さて何のことやらさっぱり」</span>
+  <div class="button-flex">
+    <a href="#" id="backButtonPre95" class="button2 pre-button back-button">戻る</a>
+    <button class="autoPlayButton button pre-button autoplay-button">オート再生</button>
+    <a href="#" id="nextButtonPre95" class="button pre-button next-button">進む</a>
+  </div>
+</pre>
+
+<pre id="pre96" class="p1">
+<span>「すまん...どうやら俺の勘違いだったみたいだ...」</span>
+  <div class="button-flex">
+    <a href="#" id="backButtonPre96" class="button2 pre-button back-button">戻る</a>
+    <button class="autoPlayButton button pre-button autoplay-button">オート再生</button>
+    <a href="#" id="nextButtonPre96" class="button pre-button next-button">進む</a>
+  </div>
+</pre>
+
+<pre id="pre97" class="p1">
+<span>（デカすぎんだろ...!!）</span>
+  <div class="button-flex">
+    <a href="#" id="backButtonPre97" class="button2 pre-button back-button">戻る</a>
+    <button class="autoPlayButton button pre-button autoplay-button">オート再生</button>
+    <a href="#" id="nextButtonPre97" class="button pre-button next-button">進む</a>
+  </div>
+</pre>
+
+
+
+
+<pre id="pre98" class="p1">
+<span>（何者なんだコイツ...?）</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button> 
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre99" class="p1">
+ <span>!!　おとっつあんが、ここまで動揺するなんて...!!</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button> 
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+
+<style>
+.modal93 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content93 {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+.close93 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close93:hover,
+.close93:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal-content93 button {
+  /* ここにボタンのスタイルを指定 */
+  background-color: skyblue;
+  color: white;
+  padding: 5px 10px;
+  margin-top: 30px;
+  margin-left: 137px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal-content93 button:hover {
+  background-color: darkblue;
+}
+
+
+</style>
+
+
+  <pre id="pre100" class="p1">
+<span>「ぱいぱい...ぼいん。
+　では、私はそろそろ...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button> 
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+
+
+
+
+
+
+
+
+  <pre id="pre101" class="p1">
+ <span>そう言って店員は、キッチンへと向かって戻って行く。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button> 
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+  <pre id="pre102" class="p1">
+<span>「珍しいね？
+　おとっつあんの勘がハズレるなんて...」</span>
+<div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button> 
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+
+
+  <pre id="pre103" class="p1">
+<span>「あぁ...だがアイツは、間違いなく只者じゃねえぜ...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button> 
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre104" class="p1">
+<span>「それっておとっつあんがよく言ってる、例の男の勘って奴かい...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button> 
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+
+  <pre id="pre105" class="p1">
+<span>「そうだ...俺の男の勘が、あの店員の怪しさをヒシヒシと感じ取ってた...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button> 
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre106" class="p1">
+<span>「男の勘は...極めると怪しい奴らに対して敏感になれる優れもんのスキルだ...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button> 
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+
+
+  <pre id="pre107" class="p1">
+<span>「お前も...いずれ極めてみると良い...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button> 
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre108" class="p1">
+ <span>ーー龍二は、男の勘Lv.1を習得した!!</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button> 
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+
+  <pre id="pre109" class="p1">
+<span>「おまたせっくす♪」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre110" class="p1">
+<span>「パオたろうスペシャル♪」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre111" class="p1">
+ <span>カレーが盛られた二つの白い丸皿を手に、先程のウエイターがテーブル席へと戻って来た。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre112" class="p1">
+ <span>コトリ...。
+ 静かに音を立てて卓上へと並べられる、二人分の横須賀カレー。 </span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+
+  <pre id="pre113" class="p1">
+ <span> コクリ...。
+ 俺とおとっつあんは、二人揃って喉を唸らせる...。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre114" class="p1">
+<span>「ごゆっくりどうぞ」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+  <pre id="pre116" class="p1">
+<span>「...美味そうだね？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre117" class="p1">
+<span>「だろ？　食ってみりゃ分かる!!
+　この店の横須賀カレーは、とびっきり美味いぞ...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+  <pre id="pre118" class="p1">
+<span>「ふぅ～〜〜ん。
+　けどさぁ、おとっつぁん。
+　そんなカレーを食べる時ぐらい、そのカメラは外せば良いのに...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre119" class="p1">
+<span>「不思議か？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre120" class="p1">
+<span>「うん。とっても...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+  <pre id="pre121" class="p1">
+ <span> 俺とおとっつぁんの食卓に並べられたカレーは、ホタテやイカ等の海鮮類を代表として。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+  <pre id="pre121" class="p1">
+ <span> ジャガイモやニンジン等の野菜を大きめにカットして入れてある特性・横須賀カレーだ。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+<pre id="pre121" class="p1">
+ <span>匂いを嗅ぐ...。
+ ただそれだけで腹が減るし、よだれが出る。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+
+  <pre id="pre122" class="p1">
+ <span>なのにおとっつあんは、横に置かれた食器入れからスプーンを手にするだけで。
+ 首にかけられたカメラをしまう素振りは、一切見せない。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre123" class="p1">
+ <span>きっとそのまま食べるつもりだ。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+
+  <pre id="pre124" class="p1">
+<span>「別に今に始まった事じゃないけど...どうして？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    
+  </pre>
+
+  <pre id="pre125" class="p1">
+<span>「カメラを取らないのにも理由がある...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre126" class="p1">
+<span>「俺にとってこのカメラは、お母ちゃんとの思い出やこの横須賀カレーと同じぐらい。
+　特別な思い入れの一つなんだよ...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre127" class="p1">
+<span>「特別な思い入れ...？
+　そのビデオカメラが...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  <pre id="pre128" class="p1">
+<span>「あぁ……良いか？
+　このビデオカメラのレンズから見える景色は、特別なんだ...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre129" class="p1">
+<span>「景色が特別...？」
+
+　</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre130" class="p1">
+ <span>カメラから見える景色が特別とは、一体どういう意味だろう...？</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre131" class="p1">
+ <span>不思議に思った俺は、無言で続きを催促する。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre132" class="p1">
+<span>「ちょうどこのカフェテラスからレンズを覗くと、あの横浜中華街の景色が一望できるんだ...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  <pre id="pre133" class="p1">
+<span>「それが特別...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  <pre id="pre134" class="p1">
+<span>「あぁ...それが俺にとっては特別な景色...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  <pre id="pre135" class="p1">
+<span>「でも...何で景色が？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  <pre id="pre136" class="p1">
+<span>「中華街の景色なら、別にカメラのレンズを通さなくたって見れるじゃないか...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  <pre id="pre137" class="p1">
+<span>「フッ。まぁ、そりゃあそうだがよ...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  <pre id="pre138" class="p1">
+<span>「コイツぁ...そういう話じゃねえんだよ...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  <pre id="pre139" class="p1">
+<span>「そういう話じゃない...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre140" class="p1">
+<span>「あぁ...いいか？
+　モノの見え方っつうのは、不思議なもんでよ？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre141" class="p1">
+<span>「いつだって遠巻きに見える景色のほうが、近くで見る時よりよっぽど綺麗に見えちまうもんなんだ...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre142" class="p1">
+<span>「だから俺ぁ...その景色の美しさに心奪われた時から決めてんだ」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  
+  <pre id="pre143" class="p1">
+<span>「このカメラ越しに見える景色を。
+　俺の大事な思い入れにしようってな...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+  <pre id="pre144" class="p1">
+<span>「...どうして景色を？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre145" class="p1">
+<span>「フッ。どうしてだろうな...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+  <pre id="pre146" class="p1">
+<span>「ひょっとしたら俺にも...負い目ってヤツが残ってたのかも知れねえな...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre147" class="p1">
+<span>「ーー龍二。俺はな...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  
+  <pre id="pre148" class="p1">
+<span>「せめてお前だけは...真っ当に明るい道を選んで欲しいと思ってる...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+  <pre id="pre149" class="p1">
+<span>「俺だけはって...。
+　一体どういう意味だよ...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+  <pre id="pre150" class="p1">
+<span>「カシラ...そろそろ...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  <pre id="pre151" class="p1">
+ <span>黒いスーツに黒いグラサン。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+  <pre id="pre152" class="p1">
+ <span>現れたのは、足元の革靴に至るまで。
+ 全身を黒一色で統一した男だった...。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  <pre id="pre153" class="p1">
+<span>「あぁ...分かってる...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+  <pre id="pre154" class="p1">
+<span>「悪い!!　龍二...!!
+　おとっつぁん...これからちょっと野暮用が出来ちまった...!!」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+  <pre id="pre155" class="p1">
+<span>「え...でもまだカレーが...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  <pre id="pre156" class="p1">
+<span>「カレーは、先に食べて待っててくれ...。
+　30分ぐらいで...戻って来るからよ...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre157" class="p1">
+ <span>そう言って座席を立ち上がったおとっつぁんは、大事な思い入れのカレーに目も暮れることなく。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  <pre id="pre158" class="p1">
+ <span>やって来た男と共に黒いセダンタイプの車に乗り込んで行く。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+  <pre id="pre159" class="p1">
+<span>「おとっつぁん...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+  <pre id="pre160" class="p1">
+ <span>だけどそれきりおとっつぁんは、俺の元に帰って来る事は一度も無かった...。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  <pre id="pre161" class="p1">
+ <span>おとっつぁんは、蒸発した。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+  <pre id="pre162" class="p1">
+ <span>それも突然と俺の目の前から姿を消して...。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="/ma②/index998.html" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+
+
+
+
+</div>
+
+<script src="main2.js"></script>
+
+
+</body>
+</html>
+
+
+
+
