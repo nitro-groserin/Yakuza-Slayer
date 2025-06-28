@@ -1,7 +1,7 @@
 const audioPaths = [
-  { src: '/sound-box②/put_cups_away.mp3', volume: 0.2 }, // 1曲目
-  { src: '/sound-box/sei_ge_syokki_arai02.mp3', volume: 0.8 }, // 2曲目
-  { src: '/sound-box②/崩壊都市ー街道ー.mp3', volume: 0.2 }  // 3曲目
+  { src: 'put_cups_away.mp3', volume: 0.2 }, // 1曲目
+  { src: 'sei_ge_syokki_arai02.mp3', volume: 0.8 }, // 2曲目
+  { src: '崩壊都市ー街道ー.mp3', volume: 0.2 }  // 3曲目
 ];
 
 const audioElements = audioPaths.map(path => {
@@ -71,9 +71,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   // 効果音の定義とボリューム設定
-  const clickSound1 = new Audio('/sound-box/meka_ge_keyborad01.mp3');
+  const clickSound1 = new Audio('meka_ge_keyborad01.mp3');
   const clickSound2 = new Audio('');
-  const modalClickSound = new Audio('/sound-box/PC-Mouse06-1.mp3');
+  const modalClickSound = new Audio('PC-Mouse06-1.mp3');
 
   const mainClickVolume1 = 0.2;
   const mainClickVolume2 = 0.0;
@@ -344,7 +344,7 @@ function openModal93() {
   const modal93 = document.getElementById("myModal93");
   if (modal93) {
     modal93.style.display = "block";
-    const clickSoundEffectModal52Open = new Audio('/sound-box/PC-Mouse06-1.mp3');
+    const clickSoundEffectModal52Open = new Audio('PC-Mouse06-1.mp3');
     clickSoundEffectModal52Open.play();
   }
 }
@@ -353,7 +353,7 @@ function closeModal93() {
   const modal93 = document.getElementById("myModal93");
   if (modal93) {
     modal93.style.display = "none";
-    const clickSoundEffectModal52Close = new Audio('/sound-box/PC-Mouse06-1.mp3');
+    const clickSoundEffectModal52Close = new Audio('PC-Mouse06-1.mp3');
     clickSoundEffectModal52Close.play();
   }
 }
@@ -418,16 +418,6 @@ if (nextButtonPre98) {
 
 
 
-
-
-//「最近、目立ちたがり屋のバカ野郎が多すぎて困るぜ。
-　//指まで指しちゃってよ」
-　
-//「あ？　なんて言ったんだ今？」
-
-
-//「目立ちたがり屋のバカ野郎が多すぎるって言ったんだよ。
-//耳聞こえねえのか？　この野郎」
 
 
 
