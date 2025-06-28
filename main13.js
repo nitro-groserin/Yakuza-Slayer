@@ -1,8 +1,8 @@
 const audioPaths = [
-  { src: '/sound-box②/put_cups_away.mp3', volume: 0.2 }, // 1曲目
-  { src: '/sound-box/sei_ge_syokki_arai02.mp3', volume: 0.8 }, // 2曲目
-  { src: '/sound-box②/激しい格闘シーン.mp3', volume: 0.6 }, // 3曲目
-  { src: '/sound-box②/崩れた橋の線路.mp3', volume: 0.4 }  // 4曲目
+  { src: 'put_cups_away.mp3', volume: 0.2 }, // 1曲目
+  { src: 'sei_ge_syokki_arai02.mp3', volume: 0.8 }, // 2曲目
+  { src: '激しい格闘シーン.mp3', volume: 0.6 }, // 3曲目
+  { src: '崩れた橋の線路.mp3', volume: 0.4 }  // 4曲目
 ];
 
 const audioElements = audioPaths.map(path => {
@@ -72,9 +72,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   // 効果音の定義とボリューム設定
-  const clickSound1 = new Audio('/sound-box/meka_ge_keyborad01.mp3');
+  const clickSound1 = new Audio('meka_ge_keyborad01.mp3');
   const clickSound2 = new Audio('');
-  const modalClickSound = new Audio('/sound-box/PC-Mouse06-1.mp3');
+  const modalClickSound = new Audio('PC-Mouse06-1.mp3');
 
   const mainClickVolume1 = 0.2;
   const mainClickVolume2 = 0.0;
