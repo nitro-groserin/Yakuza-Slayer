@@ -345,7 +345,7 @@ function openModal93() {
   const modal93 = document.getElementById("myModal93");
   if (modal93) {
     modal93.style.display = "block";
-    const clickSoundEffectModal52Open = new Audio('/sound-box/PC-Mouse06-1.mp3');
+    const clickSoundEffectModal52Open = new Audio('PC-Mouse06-1.mp3');
     clickSoundEffectModal52Open.play();
   }
 }
@@ -354,7 +354,7 @@ function closeModal93() {
   const modal93 = document.getElementById("myModal93");
   if (modal93) {
     modal93.style.display = "none";
-    const clickSoundEffectModal52Close = new Audio('/sound-box/PC-Mouse06-1.mp3');
+    const clickSoundEffectModal52Close = new Audio('PC-Mouse06-1.mp3');
     clickSoundEffectModal52Close.play();
   }
 }
