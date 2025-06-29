@@ -8,8 +8,8 @@ const audioPaths = [
   { src: '', volume: 0.2 }, // 1曲目
   { src: '', volume: 1.0 }, // 1曲目
 
-  { src: '/sound-box3/自家製雨.mp3', volume: 1.0 }, // 1曲目
-  { src: '/sound-box/名探偵クール(SAPPHO).mp3', volume: 0.2 }, // 2曲目
+  { src: '自家製雨.mp3', volume: 1.0 }, // 1曲目
+  { src: '名探偵クール(SAPPHO).mp3', volume: 0.2 }, // 2曲目
   { src: '', volume: 0.4 }, // 3曲目
   { src: '', volume: 0.4 }  // 4曲目
 ];
@@ -86,9 +86,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   // 効果音の定義とボリューム設定
-  const clickSound1 = new Audio('/sound-box/meka_ge_keyborad01.mp3');
+  const clickSound1 = new Audio('meka_ge_keyborad01.mp3');
   const clickSound2 = new Audio('');
-  const modalClickSound = new Audio('/sound-box/PC-Mouse06-1.mp3');
+  const modalClickSound = new Audio('PC-Mouse06-1.mp3');
 
   const mainClickVolume1 = 0.2;
   const mainClickVolume2 = 0.0;
