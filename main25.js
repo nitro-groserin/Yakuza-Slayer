@@ -11,7 +11,7 @@ const audioPaths = [
   { src: '', volume: 0.2 }, // 1曲目
   { src: '', volume: 0.3 }, // 2曲目
   { src: '', volume: 0.4 }, // 3曲目
-  { src: '/sound-box3/風が吹く1.mp3', volume: 0.4 }  // 4曲目
+  { src: '風が吹く1.mp3', volume: 0.4 }  // 4曲目
 ];
 
 const audioElements = audioPaths.map(path => {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // ページ遷移ボタンの効果音処理
   const pageNextButton = document.getElementById('nextButton1');
   const pageBackButton = document.getElementById('backButton2');
-  const pageClickSound = new Audio('/sound-box/PC-Mouse06-1.mp3');
+  const pageClickSound = new Audio('PC-Mouse06-1.mp3');
 
   if (pageNextButton) {
     pageNextButton.addEventListener('click', function() {
@@ -81,9 +81,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   // 効果音の定義とボリューム設定
-  const clickSound1 = new Audio('/sound-box/meka_ge_keyborad01.mp3');
+  const clickSound1 = new Audio('meka_ge_keyborad01.mp3');
   const clickSound2 = new Audio('');
-  const modalClickSound = new Audio('/sound-box/PC-Mouse06-1.mp3');
+  const modalClickSound = new Audio('PC-Mouse06-1.mp3');
 
   const mainClickVolume1 = 0.2;
   const mainClickVolume2 = 0.0;
