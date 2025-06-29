@@ -1,6 +1,6 @@
 const audioPaths = [
-  '/sound-box/雷雨.mp3', // 1つ目の効果音のパス
-  '/sound-box/雷雨.mp3'  // 2つ目の効果音のパス
+  '雷雨.mp3', // 1つ目の効果音のパス
+  '雷雨.mp3'  // 2つ目の効果音のパス
 ];
 const sounds = audioPaths.map(path => new Audio(path)); // 各パスに対応する Audio オブジェクトを作成
 let isPlaying = false; // 再生中かどうかを管理するフラグ
