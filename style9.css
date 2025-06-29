@@ -1,6 +1,6 @@
 body {
   overflow: hidden;
-  background-image: url('/Slayer-box/img-box7/Screenshot_20250516-094054~2.png');
+  background-image: url('Screenshot_20250516-094054~2.png');
   background-size: contain; /* 画像を拡大縮小して要素全体を覆う */
   background-repeat: no-repeat; /* 画像を繰り返さない */
   width: 95%;
