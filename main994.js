@@ -1,8 +1,8 @@
 const audioPaths = [
   { src: '', volume: 0.2 }, // 1曲目
   { src: '', volume: 0.8 }, // 2曲目
-  { src: '/sound-box②/アスファルトの上を歩く1.mp3', volume: 1.0 }, // 3曲目
-  { src: '/sound-gun-box/夜の繁華街.mp3', volume: 0.5 }  // 4曲目
+  { src: 'アスファルトの上を歩く1.mp3', volume: 1.0 }, // 3曲目
+  { src: '夜の繁華街.mp3', volume: 0.5 }  // 4曲目
 ];
 
 const audioElements = audioPaths.map(path => {
