@@ -1,6 +1,6 @@
 const audioPaths = [
-  { src: '/sound-box②/車のエンジンをかける1.mp3', volume: 0.4 }, // 1曲目
-  { src: '/sound-box②/崩壊都市ー街道ー.mp3', volume: 0.2 }  // 2曲目
+  { src: '車のエンジンをかける1.mp3', volume: 0.4 }, // 1曲目
+  { src: '崩壊都市ー街道ー.mp3', volume: 0.2 }  // 2曲目
 ];
 
 const audioElements = audioPaths.map(path => {
@@ -80,9 +80,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   // 効果音の定義とボリューム設定
-  const clickSound1 = new Audio('/sound-box/meka_ge_keyborad01.mp3');
+  const clickSound1 = new Audio('meka_ge_keyborad01.mp3');
   const clickSound2 = new Audio('');
-  const modalClickSound = new Audio('/sound-box/PC-Mouse06-1.mp3');
+  const modalClickSound = new Audio('PC-Mouse06-1.mp3');
 
   const mainClickVolume1 = 0.2;
   const mainClickVolume2 = 0.0;
@@ -427,14 +427,6 @@ if (nextButtonPre98) {
 
 
 
-//「最近、目立ちたがり屋のバカ野郎が多すぎて困るぜ。
-　//指まで指しちゃってよ」
-　
-//「あ？　なんて言ったんだ今？」
-
-
-//「目立ちたがり屋のバカ野郎が多すぎるって言ったんだよ。
-//耳聞こえねえのか？　この野郎」
 
 
 
