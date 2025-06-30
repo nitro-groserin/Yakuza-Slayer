@@ -1,0 +1,641 @@
+  <!DOCTYPE html>
+<html lang="ja">
+<head>
+  <me charset="UTF-8">
+  <title>反社スレイヤー</title>
+  <link rel="stylesheet" href="style29.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script src="https//js.stripe.com/v3/"></script>
+
+
+<style>
+.modal {
+  display: none; /* 初期状態では非表示 */
+  position: fixed; /* 画面に固定 */
+  z-index: 100; /* 最前面に表示 */
+  left: 0;
+  top: 0;
+  width: 100%; /* 全幅 */
+  height: 100%; /* 全高 */
+  overflow: auto; /* コンテンツが多ければスクロール可能 */
+  background-color: rgba(0, 0, 0, 0.4); /* 背景を少し暗くする */
+}
+
+.modal-content {
+  background-image: url('/Slayer-box/img-box2/Screenshot_20250308-231629~4 (1).png');
+  background-size: 100% 100%; /* または contain, cover など */
+  background-repeat: no-repeat;
+  background-color: #fefefe;
+  margin: 15% auto; /* 中央に配置 */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* 幅を調整 */
+  height: 390px;
+}
+
+#myModal p{
+  color: black;
+  font-size: 20px;
+  left: 20%;
+  position: absolute;
+  top: 80px;
+  text-align: center;
+}
+
+
+.modal-content a{
+  color: red;
+  position: absolute;
+  left: 85px;
+  top: 175px;
+  pointer-events: none;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal2 {
+  display: none; /* 初期状態では非表示 */
+  position: fixed; /* 画面に固定 */
+  z-index: 1; /* 最前面に表示 */
+  left: 0;
+  top: 0;
+  width: 100%; /* 全幅 */
+  height: 100%; /* 全高 */
+  overflow: auto; /* コンテンツが多ければスクロール可能 */
+  background-color: rgba(0, 0, 0, 0.4); /* 背景を少し暗くする */
+}
+
+.modal-content2 {
+  background-image: url('');
+  background-size: 100% 100%; /* または contain, cover など */
+  background-repeat: no-repeat;
+  background-color: #fefefe;
+  margin: 15% auto; /* 中央に配置 */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* 幅を調整 */
+  height: 390px;
+}
+
+.close2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+
+<button id="Coin">
+  <p class="">コイン</p>
+</button>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+    <p>500円でご購入後<br>
+    反社スレイヤー<br>
+    Episode.3をプレイできます</p>
+    <a href="https://buy.stripe.com/test_dR66rSabz4S8e1G7st">こちらをクリックしてお支払い</a>
+    <br>
+    </p>
+    
+    
+  </div>
+</div>
+
+
+
+<div class="div7">
+  <img src="/Slayer-box/img-box12/無題184_20250616053710 (1).png" width="400px" height="430px" alt="けん">
+</div>
+
+
+
+<div class="div3">
+  <img src="/Slayer-box/img-box6/Screenshot_20250509-023055~2 (1).png" width="210px" height="500px" alt="カシ">
+</div>
+
+
+<div class="div1">
+  <img src="/Slayer-box/img-box4/Screenshot_20250424-141354~2 (1).png" width="310px" height="430px">
+</div>
+
+
+
+<div class="div2">
+  <img src="/Slayer-box/img-box9/Screenshot_20250509-023222~2 (1)~2 (1).png" width="250px" height="450px" alt="しも3">
+</div>
+
+
+
+<div class="div8">
+  <img src="/Slayer-box/img-box8/Screenshot_20250427-200037~3 (1)~2 (1).png" width="280x" height="400px" alt="じょー②">
+</div>
+
+
+
+<div class="div4">
+  <img src="/Slayer-box/img-box9/Screenshot_20250509-023222~2 (1).png" width="250px" height="450px" alt="しも">
+</div>
+
+<div class="div5">
+  <img src="/Slayer-box/img-box8/Screenshot_20250427-200037~3 (1).png" width="280px" height="400px" alt="じょー">
+</div>
+
+
+
+
+<div class="div9">
+  <img src="/Slayer-box/img-box9/Screenshot_20250605-221131~2.png" width="420px" height="420px" alt="背④">
+</div>
+
+
+
+
+
+<div id="preContainer">
+
+
+
+    <pre id="pre1342" class="p1" style="display: none;">
+<span>「所で...。
+　森崎さんは、どこ行ったんですか？」</span>
+    <div class="button-flex">
+      <a href="/1-1(第一章、第28話)スパン/index28.html" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre1343" class="p1" style="display: none;">
+<span>「さぁな。
+　さっき俺がここに来た頃には、もう森崎は居なかった...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+
+
+    <pre id="pre1344" class="p1" style="display: none;">
+<span>「今後の打ち合わせも兼ねて...。
+　話し合いをしようと思ってたんだがな...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+    <pre id="pre1345" class="p1" style="display: none;">
+<span>「...しゃあねえ。
+　いっちょ電話してみるか...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+    <pre id="pre1346" class="p1" style="display: none;">
+ <span>カシラは懐からスマホを取り出し...。
+ 森崎のスマホに迷わず発信する。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+    <pre id="pre1347" class="p1" style="display: none;">
+<span>「......」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+    <pre id="pre1348" class="p1" style="display: none;">
+<span>「んッ......？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+    <pre id="pre1349" class="p1" style="display: none;">
+ <span>その違和感には、この場にいる誰もが気がつく...。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+
+    <pre id="pre1350" class="p1" style="display: none;">
+<span>「森崎のスマホ......。
+　この弁護士事務所の中から鳴ってねえか...？」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+
+    <pre id="pre1351" class="p1" style="display: none;">
+<span>「あぁ...みてえだな...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+  
+    <pre id="pre1352" class="p1" style="display: none;">
+ <span>ジョージの言葉に無言で頷くと、カシラは再びスマホから番号を発信...。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+      <pre id="pre1353" class="p1" style="display: none;">
+ <span>トゥルル...とコール音が鳴る。
+ 俺たちは耳を済ませて、その音の出処を探りはじめた...。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre1354" class="p1" style="display: none;">
+<span>「ッーーあの中みたいだ...ッ」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+  
+    <pre id="pre1355" class="p1" style="display: none;">
+ <span>気が付いたのは、森崎法律事務所の最奥に置かれていた用具箱...。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre1356" class="p1" style="display: none;">
+ <span>その中から、森崎のスマホの着信音が聞こえて来ているのだ...。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre1357" class="p1" style="display: none;">
+ <span>ゴクリ...生唾を飲み下し。
+ 俺はーー恐る恐るその用具箱の元へと近付いて行く...。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre1358" class="p1" style="display: none;">
+ <span>ブゥウウウ。
+ するとスマホのバイブ音が次第に大きくなる。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre1359" class="p1" style="display: none;">
+<span>「確かにこの中から、聞こえている...」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+
+
+    <pre id="pre1360" class="p1" style="display: none;">
+ <span>用具箱の取っ手に指をかけようとしたその時ーー。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre1361" class="p1" style="display: none;">
+ <span>ギィ〜と古びた音を立てながら、無造作に扉が開かれた...。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre1362" class="p1" style="display: none;">
+<span>「ーーッ!?!?」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre1363" class="p1" style="display: none;">
+<span>「ーーオイ!!　マジかッ!!」</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="#" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+    <pre id="pre1364" class="p1" style="display: none;">
+ <span>そこから出て来たのはーー。
+ 跡形も無く黒焦げに燃やされ...変わり果てた...。
+ ーー森崎 健吾の遺体だった......。</span>
+    <div class="button-flex">
+      <a href="#" id="backButton2" class="button2">戻る</a>
+      <button class="autoPlayButton button">オート再生</button>
+      <a href="/ma8/index992.html" id="nextButton1" class="button">進む</a>
+    </div>
+  </pre>
+  
+  
+
+
+ 
+ </div>
+
+
+
+<audio id="transitionSound1" src="/sound-gun-box/電話の呼び出し音.mp3" preload="auto"></audio>
+
+<audio id="transitionSound2" src="/sound-gun-box/携帯電話のバイブレーション1.mp3" preload="auto"></audio>
+
+
+<audio id="transitionSound3" src="/sound-gun-box/携帯電話のバイブレーション2.mp3" preload="auto"></audio>
+
+
+<audio id="transitionSound4" src="/sound-gun-box/古びたドアを開ける.mp3" preload="auto"></audio>
+
+
+<audio id="transitionSound5" src="/sound-gun-box/Motion-Fall05-1(Stumble).mp3" preload="auto"></audio>
+
+
+
+
+
+<script src="main29.js"></script>
+
+
+
+<script>
+    // 1. 各pre要素とその中のボタンを取得
+    const pre1346Element = document.getElementById('pre1346');
+    // pre1039Element の中の #nextButton1 を取得
+    const nextButtonFrom1346 = pre1346Element.querySelector('#nextButton1');
+
+    const pre1347Element = document.getElementById('pre1347');
+    // pre1040Element の中の #nextButton1 を取得
+    const nextButtonFrom1347 = pre1347Element.querySelector('#nextButton1');
+
+    const pre1348Element = document.getElementById('pre1348'); // 遷移先の要素
+
+
+    const pre1357Element = document.getElementById('pre1357');
+    // pre1040Element の中の #nextButton1 を取得
+    const nextButtonFrom1357 = pre1357Element.querySelector('#nextButton1');
+    const pre1358Element = document.getElementById('pre1358'); // 遷移先の要素
+
+    
+    
+    
+      // 1. 各pre要素とその中のボタンを取得
+    const pre1360Element = document.getElementById('pre1360');
+    // pre1039Element の中の #nextButton1 を取得
+    const nextButtonFrom1360 = pre1360Element.querySelector('#nextButton1');
+
+    const pre1361Element = document.getElementById('pre1361');
+    // pre1040Element の中の #nextButton1 を取得
+    const nextButtonFrom1361 = pre1361Element.querySelector('#nextButton1');
+
+    const pre1362Element = document.getElementById('pre1362'); // 遷移先の要素
+    
+    
+    
+      // 1. 各pre要素とその中のボタンを取得
+    const pre1352Element = document.getElementById('pre1352');
+    // pre1039Element の中の #nextButton1 を取得
+    const nextButtonFrom1352 = pre1352Element.querySelector('#nextButton1');
+
+    const pre1353Element = document.getElementById('pre1353');
+    // pre1040Element の中の #nextButton1 を取得
+    const nextButtonFrom1353 = pre1353Element.querySelector('#nextButton1');
+
+    const pre1354Element = document.getElementById('pre1354'); // 遷移先の要素
+
+
+
+
+    // 2. 各音声要素を取得
+    const transitionSound1 = document.getElementById('transitionSound1'); // pre1039からpre1040への音
+    const transitionSound2 = document.getElementById('transitionSound2'); // pre1040からpre1041への音
+    const transitionSound3 = document.getElementById('transitionSound3'); // pre1040からpre1041への音
+    const transitionSound4 = document.getElementById('transitionSound4'); // pre1040からpre1041への音
+
+    const transitionSound5 = document.getElementById('transitionSound5'); // pre1040からpre1041への音
+
+
+    // 3. pre1039のボタンがクリックされた時の処理
+    nextButtonFrom1346.addEventListener('click', function(event) {
+        event.preventDefault(); // aタグのデフォルト動作（ページ遷移）を防止
+
+        // pre1039を非表示にし、pre1040を表示
+        pre1346Element.style.display = 'none';
+        pre1347Element.style.display = 'block';
+
+        // 最初の音声を再生
+        transitionSound1.currentTime = 0; // 再生位置を最初に戻す
+        transitionSound1.play();
+    });
+
+    // 4. pre1040のボタンがクリックされた時の処理
+    nextButtonFrom1347.addEventListener('click', function(event) {
+        event.preventDefault(); // aタグのデフォルト動作（ページ遷移）を防止
+
+        // pre1040を非表示にし、pre1041を表示
+        pre1347Element.style.display = 'none';
+        pre1348Element.style.display = 'block'; // 例としてpre1041を表示
+
+        // 2つ目の音声を再生
+        transitionSound2.currentTime = 0; // 再生位置を最初に戻す
+        transitionSound2.play();
+    });
+
+    // 4. pre1040のボタンがクリックされた時の処理
+    nextButtonFrom1357.addEventListener('click', function(event) {
+        event.preventDefault(); // aタグのデフォルト動作（ページ遷移）を防止
+
+        // pre1040を非表示にし、pre1041を表示
+        pre1357Element.style.display = 'none';
+        pre1358Element.style.display = 'block'; // 例としてpre1041を表示
+
+        // 2つ目の音声を再生
+        transitionSound3.currentTime = 0; // 再生位置を最初に戻す
+        transitionSound3.play();
+    });
+        
+  
+  
+      // 4. pre1040のボタンがクリックされた時の処理
+    nextButtonFrom1360.addEventListener('click', function(event) {
+        event.preventDefault(); // aタグのデフォルト動作（ページ遷移）を防止
+
+        // pre1040を非表示にし、pre1041を表示
+        pre1360Element.style.display = 'none';
+        pre1361Element.style.display = 'block'; // 例としてpre1041を表示
+
+        // 2つ目の音声を再生
+        transitionSound4.currentTime = 0; // 再生位置を最初に戻す
+        transitionSound4.play();
+    });
+        
+        
+  
+      // 4. pre1040のボタンがクリックされた時の処理
+    nextButtonFrom1361.addEventListener('click', function(event) {
+        event.preventDefault(); // aタグのデフォルト動作（ページ遷移）を防止
+
+        // pre1040を非表示にし、pre1041を表示
+        pre1361Element.style.display = 'none';
+        pre1362Element.style.display = 'block'; // 例としてpre1041を表示
+
+        // 2つ目の音声を再生
+        transitionSound5.currentTime = 0; // 再生位置を最初に戻す
+        transitionSound5.play();
+    });
+        
+  
+  
+      // 4. pre1040のボタンがクリックされた時の処理
+    nextButtonFrom1352.addEventListener('click', function(event) {
+        event.preventDefault(); // aタグのデフォルト動作（ページ遷移）を防止
+
+        // pre1040を非表示にし、pre1041を表示
+        pre1352Element.style.display = 'none';
+        pre1353Element.style.display = 'block'; // 例としてpre1041を表示
+
+        // 2つ目の音声を再生
+        transitionSound1.currentTime = 0; // 再生位置を最初に戻す
+        transitionSound1.play();
+    });
+        
+        
+        
+        // 4. pre1040のボタンがクリックされた時の処理
+    nextButtonFrom1353.addEventListener('click', function(event) {
+        event.preventDefault(); // aタグのデフォルト動作（ページ遷移）を防止
+
+        // pre1040を非表示にし、pre1041を表示
+        pre1353Element.style.display = 'none';
+        pre1354Element.style.display = 'block'; // 例としてpre1041を表示
+
+        // 2つ目の音声を再生
+        transitionSound2.currentTime = 0; // 再生位置を最初に戻す
+        transitionSound2.play();
+    });
+        
+  
+    
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
