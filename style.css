@@ -48,7 +48,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
-  bottom: 25px;
+  bottom: 70px;
 }
 
 
@@ -385,6 +385,18 @@ strong {
     color: white;
     text-align: center;
 }
+
+
+
+.MigiSita5{
+    position: absolute;
+    top: 696px;
+    left: 169px;
+}
+
+
+
+
 
 
 
