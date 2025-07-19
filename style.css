@@ -302,3 +302,90 @@ strong {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.MigiSita{
+    position: absolute;
+    top: 677px;
+    left: 336px;
+}
+
+
+.MigiSita2{
+    position: absolute;
+    top: 696px;
+    left: 256px;
+}
+
+
+.MigiSita3{
+    position: absolute;
+    top: 696px;
+    left: 82px;
+}
+
+
+
+.MigiSita4{
+    position: absolute;
+    top: 696px;
+    left: 0px;
+}
+
+
+
+
+.MigiSita img{
+    border-radius: 0%;
+}
+
+
+
+
+
+.MigiSita div{
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+.MigiSita2 div{
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+.MigiSita3 div{
+    color: white;
+    text-align: center;
+}
+
+
+
+
+.MigiSita4 div{
+    color: white;
+    text-align: center;
+}
+
+
+
+
