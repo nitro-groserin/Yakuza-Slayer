@@ -1,0 +1,16 @@
+{
+    "background_color": "#ffffff",
+    "dir": "ltr",
+    "display": "standalone",
+    "name": "反社スレイヤー",
+    "orientation": "any",
+    "scope": "/",
+    "short_name": "反社スレイヤー",
+    "start_url": "/https://nitro-groserin.github.io/Yakuza-Slayer/",
+    "theme_color": "#ffffff",
+    "id": "Yakuza_Slayer",
+    "description": "反社スレイヤー",
+    "lang": "ja"
+  }
+
+
