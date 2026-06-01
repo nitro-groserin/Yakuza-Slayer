@@ -6,7 +6,7 @@
   "short_name": "反社スレイヤー",
   "orientation": "any",
   "scope": "/",
-  "start_url": "https://nitro-groserin.github.io/Yakuza-Slayer/", 
+  "start_url": "https://nitro-groserin.github.io/Yakuza-Slayer/",
   "theme_color": "#ffffff",
   "id": "Yakuza_Slayer",
   "description": "反社スレイヤー",
@@ -20,23 +20,11 @@
     {
       "src": "launchericon-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
-    },
-    {
-      "src": "launchericon-512x512.png",
-      "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     }
   ]
 }
-
-
-
-
-
-
-
 
 
 
