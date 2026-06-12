@@ -1,1 +1,9 @@
 
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "io.github.nitro_groserin.twa",
+        "sha256_cert_fingerprints": ["02:56:1D:F8:07:E8:55:C8:4F:BF:BD:9B:B7:B0:9F:E4:2C:72:E0:4B:6C:39:FB:14:F8:FF:7A:42:D5:C9:56:38"]
+      }
+    }]
